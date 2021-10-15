@@ -7,13 +7,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SecondViewController: UIViewController {
 
+    @IBOutlet weak var myView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        myView.layer.cornerRadius = 15
+        
     }
 
-
+    @IBAction func dismissBtn(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
